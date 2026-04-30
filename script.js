@@ -1,16 +1,16 @@
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const mobileMenu = document.getElementById("mobileMenu");
 
-if (menuBtn && navLinks) {
+if (menuBtn && mobileMenu) {
   menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
     menuBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
   });
 
-  document.querySelectorAll(".nav-right a").forEach((link) => {
+  document.querySelectorAll(".mobile-menu a").forEach((link) => {
     link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
       menuBtn.classList.remove("active");
+      mobileMenu.classList.remove("active");
     });
   });
 }
