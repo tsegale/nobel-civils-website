@@ -485,7 +485,7 @@ body {
 .contact-strip {
   background:
     linear-gradient(135deg, rgba(0, 137, 207, 0.94), rgba(0, 111, 168, 0.95)),
-    url("assets/images/image17.jpg") center/cover;
+    url("assets/images/img17.webp") center/cover;
   color: white;
   padding: 85px 0;
 }
@@ -768,7 +768,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  background: url("assets/images/image5.jpg") center/cover;
+  background: url("assets/images/img5.webp") center/cover;
   overflow: hidden;
 }
 
@@ -878,7 +878,7 @@ body {
 /* SERVICES PAGE */
 
 .services-hero {
-  background: url("assets/images/image6.jpg") center/cover;
+  background: url("assets/images/img6.webp") center/cover;
 }
 
 .services-intro {
@@ -942,7 +942,7 @@ body {
 /* PROJECTS PAGE */
 
 .projects-hero {
-  background: url("assets/images/image7.jpg") center/cover;
+  background: url("assets/images/img7.webp") center/cover;
 }
 
 .projects-intro {
@@ -1054,7 +1054,7 @@ body {
 /* GALLERY PAGE */
 
 .gallery-hero {
-  background: url("assets/images/image8.jpg") center/cover;
+  background: url("assets/images/img8.webp") center/cover;
 }
 
 .gallery-intro {
@@ -1240,7 +1240,7 @@ body {
 /* CONTACT PAGE */
 
 .contact-hero {
-  background: url("assets/images/image17.jpg") center/cover;
+  background: url("assets/images/img17.webp") center/cover;
 }
 
 .contact-page {
@@ -1367,7 +1367,7 @@ body {
 .map-placeholder {
   background:
     linear-gradient(135deg, rgba(0, 137, 207, 0.92), rgba(0, 111, 168, 0.92)),
-    url("assets/images/img14.jpeg") center/cover;
+    url("assets/images/img14.webp") center/cover;
   min-height: 320px;
   color: white;
   display: grid;
