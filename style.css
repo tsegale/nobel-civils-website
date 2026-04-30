@@ -96,6 +96,52 @@ body {
 
 .menu-btn {
   display: none;
+  width: 44px;
+  height: 44px;
+  background: transparent; /* remove blue background */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+/* the 3 lines */
+.menu-btn span {
+  position: absolute;
+  left: 8px;
+  width: 28px;
+  height: 3px;
+  background: var(--blue);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* positions */
+.menu-btn span:nth-child(1) {
+  top: 12px;
+}
+
+.menu-btn span:nth-child(2) {
+  top: 20px;
+}
+
+.menu-btn span:nth-child(3) {
+  top: 28px;
+}
+
+/* ACTIVE (X animation) */
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 20px;
 }
 
 /* HERO */
@@ -1348,5 +1394,11 @@ body {
   .contact-info-panel,
   .contact-form-panel {
     padding: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
   }
 }

@@ -4,6 +4,14 @@ const navLinks = document.getElementById("navLinks");
 if (menuBtn && navLinks) {
   menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-right a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      menuBtn.classList.remove("active");
+    });
   });
 }
 
