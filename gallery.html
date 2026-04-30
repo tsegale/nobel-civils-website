@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nobel Civils | Rail, Civil & Building Works</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -81,6 +81,7 @@
     </section>
 
     <!-- VIDEOS -->
+
     <section class="section video-section">
       <div class="container">
         <div class="section-heading center">
@@ -89,9 +90,38 @@
         </div>
 
         <div class="video-grid">
-          <video controls src="assets/videos/vid1.mov"></video>
-          <video controls src="assets/videos/vid2.mov"></video>
-          <video controls src="assets/videos/vid3.mov"></video>
+          <div class="video-card">
+            <video
+              muted
+              preload="metadata"
+              src="assets/videos/vid1.mov"
+            ></video>
+            <div class="video-overlay">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <video
+              muted
+              preload="metadata"
+              src="assets/videos/vid2.mov"
+            ></video>
+            <div class="video-overlay">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <video
+              muted
+              preload="metadata"
+              src="assets/videos/vid3.mov"
+            ></video>
+            <div class="video-overlay">
+              <div class="play-icon"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,6 +181,10 @@
       </div>
     </footer>
 
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">×</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

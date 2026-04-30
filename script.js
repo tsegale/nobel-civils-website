@@ -22,3 +22,44 @@ if (heroVideo && heroVideoSource) {
     heroVideo.play();
   });
 }
+
+const lightbox = document.getElementById("lightbox");
+const lightboxContent = document.getElementById("lightboxContent");
+const lightboxClose = document.getElementById("lightboxClose");
+
+document.querySelectorAll(".gallery-grid img").forEach((img) => {
+  img.addEventListener("click", () => {
+    lightboxContent.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+    lightbox.classList.add("active");
+  });
+});
+
+document.querySelectorAll(".video-card").forEach((card) => {
+  const video = card.querySelector("video");
+
+  card.addEventListener("mouseenter", () => {
+    video.currentTime = 0;
+    video.play();
+  });
+
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
+  card.addEventListener("click", () => {
+    lightboxContent.innerHTML = `<video src="${video.src}" controls autoplay></video>`;
+    lightbox.classList.add("active");
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  lightboxContent.innerHTML = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
