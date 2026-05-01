@@ -1526,3 +1526,11 @@ html,
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 900px) {
+  .hero::after,
+  .page-hero::after,
+  .section-image.angled::before {
+    display: none !important;
+  }
+}
